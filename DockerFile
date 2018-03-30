@@ -1,1 +1,7 @@
-ÿþ
+FROM microsoft/aspnetcore-build:2.0 AS build-env
+
+# Fetch and install curl
+RUN apt-get update && apt-get install -y curl
+
+COPY sourceCode/ /sourceCode/
+COPY cli/ /cli/
