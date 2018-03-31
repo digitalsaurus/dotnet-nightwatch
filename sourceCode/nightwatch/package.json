@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "author": "Tom McKinney, Elyption",
   "license": "MIT",
-  "description": "",  
-  "keywords": ["dotnet", "nightwatch"],
+  "description": "",
+  "keywords": [
+    "dotnet",
+    "nightwatch"
+  ],
   "scripts": {
-    "test": "nightwatch --env integration"
+    "test": "nightwatch"
   },
   "dependencies": {
+    "chromedriver": "^2.37.0",
     "nightwatch": "^0.9.20"
   }
 }
