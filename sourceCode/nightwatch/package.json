@@ -1,0 +1,14 @@
+{
+  "name": "dotnet-nightwatch",
+  "version": "1.0.0",
+  "author": "Tom McKinney, Elyption",
+  "license": "MIT",
+  "description": "",  
+  "keywords": ["dotnet", "nightwatch"],
+  "scripts": {
+    "test": "nightwatch --env integration"
+  },
+  "dependencies": {
+    "nightwatch": "^0.9.20"
+  }
+}
