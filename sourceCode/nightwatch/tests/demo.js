@@ -1,9 +1,13 @@
 module.exports = {
-  'Demo test': (browser) => {
-    console.log(browser.launchUrl)
-    browser
-      .url(browser.launchUrl)
-      .waitForElementVisible('.App-logo', 5000)
-      .end();
+  'Demo test': (client) => {
+    client.url(client.launchUrl);
+
+    client.click('.counter button');
+    client.click('.counter button');
+    client.click('.counter button');
+
+    client.expect.element('.counter span').text.to.equal('3');
+    
+    client.end();
   }
 }

@@ -34,6 +34,7 @@ msbuild.wrn
 
 # Application
 
-.vscode
-node_modules
-sourceCode/nightwatch/reports
+.vscode/
+node_modules/
+debug.log
+reports/
